@@ -1,8 +1,8 @@
 # Git and Git Flow Cheat Sheet 
 ________________________________________
  
-________________________________________
-Index
+## Index
+
 *	Kurulum
 *	Yapılandırma
 *	Oluşturma
@@ -15,6 +15,7 @@ Index
 *	Geri Alma
 *	Git Flow
 ________________________________________
+
 ## Kurulum
 
 Mevcut ayarları göstermek:
@@ -105,9 +106,11 @@ git stash git checkout branch2 git stash pop
 ##### Saklanan değişiklikleri mevcut branche geri yükleme:
 ```shell
 $ git stash apply
+ 
 İstenilen saklanma yerini mevcut branche geri yükleme:
-•	{stash_number} git stash list ile elde edilebilir
+*	{stash_number} git stash list ile elde edilebilir
 $ git stash apply stash@{stash_number}
+ 
 Saklanan değişiklikleri kaldırma:
 $ git stash drop
 ________________________________________
@@ -162,6 +165,7 @@ $ git mv Index.txt Index.html
 ________________________________________
 
 ## Branches & Tags
+ 
 Tüm var olan branchleri listeler:
 $ git branch
 
