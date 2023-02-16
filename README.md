@@ -104,7 +104,6 @@ $ git commit --amend
 git stash git checkout branch2 git stash pop
 
 ##### Saklanan değişiklikleri mevcut branche geri yükleme:
-```shell
 $ git stash apply
  
 İstenilen saklanma yerini mevcut branche geri yükleme:
