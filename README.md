@@ -19,28 +19,44 @@ ________________________________________
 ## Kurulum
 
 Mevcut ayarları göstermek:
-$ git config --list
+```bash
+git config --list
+```
 
 Repository(depo) ayarlarını göstermek:
-$ git config --local --list
+```bash
+git config --local --list
+```
 
 Global ayarları göstermek:
-$ git config --global --list
+```bash
+git config --global --list
+```
 
 Sistem ayarlarını göstermek:
-$ git config --system --list
+```bash
+git config --system --list
+```
 
 Sürüm geçmişinde gözükecek adı belirlemek:
-$ git config --global user.name “[firstname lastname]”
+```bash
+git config --global user.name “[firstname lastname]”
+```
 
 Sürüm geçmişinde ilişkilendirilecek e-postayı belirlemek:
-$ git config --global user.email “[valid-email]”
+```bash
+git config --global user.email “[valid-email]”
+```
 
 Otomatik komut satırı renklendirmesini ayarlamak:
-$ git config --global color.ui auto
+```bash
+git config --global color.ui auto
+```
 
 Commitler için global yazı editörünü ayarlamak:
-$ git config --global core.editor vi
+```bash
+git config --global core.editor vi
+```
 
 ________________________________________
 
