@@ -63,26 +63,38 @@ ________________________________________
 ## Yapılandırma
 
 Repositorye(depoya) özgü yapılandırma dosyası [--local]:
+```bash
 <repo>/.git/config
+```
 
 Kullanıcıya özel yapılandırma dosyası [--global]:
+```bash
 ~/.gitconfig
+```
 
 Sistem genelinde yapılandırma dosyası [--system]:
+```bash
 /etc/gitconfig
+```
 
 ________________________________________
 
 ## Oluşturma
 
 Var olan bir repositoryi(depoyu) klonlama:
-$ git clone ssh://user@domain.com/repo.git
+```bash
+git clone ssh://user@domain.com/repo.git
+```
 
 Yeni bir yerel repository(depo) oluşturma:
-$ git init
+```bash
+git init
+```
 
 Belirli dizinde yerel repository(depo) oluşturma:
-$ git init <directory>
+```bash
+git init <directory>
+```
 
 <hr>
 
