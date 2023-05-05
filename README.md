@@ -101,70 +101,96 @@ git init <directory>
 ## Yerel Değişiklikler
 
 ##### Çalışılan dizindeki dosyaların değişimi:
-$ git status
+```bash
+git status
+```
 
 ##### İzlenen dosyalardaki değişiklikler:
-$ git diff
+```bash
+git diff
+```
 
 ##### Tüm güncel değişiklikleri sonraki commite ekleme:
-$ git add .
+```bash
+git add .
+```
 
 ##### Sonraki commite &lt;dosyasındaki&gt; bazı değişikleri ekleme:
-$ git add -p
+```bash
+git add -p
+```
 
 ##### Tüm izlenen dosyalardaki yerel değişiklikleri Commitleme:
-$ git commit -a
+```bash
+git commit -a
+```
 
 ##### Önceden hazırlanan değişiklikleri commitleme:
-$ git commit
+```bash
+git commit
+```
 
 ##### Mesaj ile commitleme:
-$ git commit -m 'message here'
+```bash
+git commit -m 'message here'
+```
 
 ##### Önceki belli bir tarihe commitleme:
+```bash
 git commit --date="date --date='n day ago'" -am "Commit Message"
+```
 
 ##### Son commiti değiştirme:<br>
 ###### Yayınlanan commite değişiklik yapmayın!
-$ git commit --amend
+```bash
+git commit --amend
+```
 
 ##### Mevcut branchteki kaydedilmemiş commitleri diğer bazı branchlere taşıma:
+```bash
 git stash git checkout branch2 git stash pop
+```
 
 ##### Saklanan değişiklikleri mevcut branche geri yükleme:
-$ git stash apply
+```bash
+git stash apply
+```
  
 İstenilen saklanma yerini mevcut branche geri yükleme:
 *	{stash_number} git stash list ile elde edilebilir
-$ git stash apply stash@{stash_number}
+```bash
+git stash apply stash@{stash_number}
+```
  
 Saklanan değişiklikleri kaldırma:
-$ git stash drop
+```bash
+git stash drop
+```
 ________________________________________
 
 ## Arama
 
 Bir metni dizindeki bütün dosyalarda aramak:
-$ git grep "Merhaba"
+git grep "Merhaba"
 
 Bir metni herhangi bir sürüm içinde aramak:
-$ git grep "Merhaba" v2.5
+git grep "Merhaba" v2.5
 
 Belirli bir kelimeyi içeren commitleri göstermek:
-$ git log -S "keyword"
+git log -S "keyword"
 
 Belirli bir kelimeyi içeren commitleri göstermek (düzenli ifadeler kullanarak):
-$ git log -S "keyword" --pickaxe-regex
+git log -S "keyword" --pickaxe-regex
 
 ________________________________________
 
 ## Commit Geçmişi
 
 Tüm commitleri en yenisinden başlayarak listeler:
-$ git log
+git log
 
 Tüm commitleri görüntüler(Sadece commit hash ve commit mesajı görüntülenir.):
-$ git log --oneline
+git log --oneline
 
 Belli kullanıcıya ait commitleri görüntüler:
 $ git log --author="username"
