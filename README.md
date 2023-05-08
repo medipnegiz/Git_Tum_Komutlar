@@ -171,41 +171,63 @@ ________________________________________
 ## Arama
 
 Bir metni dizindeki bütün dosyalarda aramak:
+```bash
 git grep "Merhaba"
+```
 
 Bir metni herhangi bir sürüm içinde aramak:
+```bash
 git grep "Merhaba" v2.5
+```
 
 Belirli bir kelimeyi içeren commitleri göstermek:
+```bash
 git log -S "keyword"
+```
 
 Belirli bir kelimeyi içeren commitleri göstermek (düzenli ifadeler kullanarak):
+```bash
 git log -S "keyword" --pickaxe-regex
+```
 
 ________________________________________
 
 ## Commit Geçmişi
 
 Tüm commitleri en yenisinden başlayarak listeler:
+```bash
 git log
+```
 
 Tüm commitleri görüntüler(Sadece commit hash ve commit mesajı görüntülenir.):
+```bash
 git log --oneline
+```
 
 Belli kullanıcıya ait commitleri görüntüler:
-$ git log --author="username"
+```bash
+git log --author="username"
+```
 
 Belirli bir dosya üzerinde zaman içinde meydana gelen değişiklikleri göstermektedir:
-$ git log -p <file>
+```bash
+git log -p <file>
+```
 
 <Dosyayı> kimin ne zaman değiştirdiğini gösterir:
-$ git blame <file>
+```bash
+git blame <file>
+```
 
 Referans kayıtlarını gösterir:
-$ git reflog show
+```bash
+git reflog show
+```
 
 Referans kayıtlarını siler:
-$ git reflog delete
+```bash
+git reflog delete
+```
 
 ________________________________________
 
@@ -213,7 +235,9 @@ ________________________________________
 
 Dosyayı yeniden adlandırmak:
 Index.txt'den Index.html'e
-$ git mv Index.txt Index.html
+```bash
+git mv Index.txt Index.html
+```
 
 ________________________________________
 
