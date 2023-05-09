@@ -350,27 +350,41 @@ ________________________________________
 ## Merge & Rebase
 
 Seçili HEADinizi istediğiniz <branch>'e merge eder:
-$ git merge <branch>
+```bash
+git merge <branch>
+```
 
 Seçili HEADinizi şimdiki <branch>'e rebase yapar
 Yayınlanan committen sonra rebase yapmayın!
-$ git rebase <branch>
+```bash
+git rebase <branch>
+```
 
 Rebase iptal etmek:
-$ git rebase --abort
+```bash
+git rebase --abort
+```
 
 Çakışmaları çözümledikten sonra rebase devam etmek:
-$ git rebase --continue
+```bash
+git rebase --continue
+```
 
 Çakışmaları çözmek için yapılandırılmış birleştirme aracını kullanmak:
-$ git mergetool
+```bash
+git mergetool
+```
 
 Editörünüzü kullanarak çakışmaları çözümledikten sonra dosyayı çözümlenmiş olarak ekleyin:
-$ git add <resolved-file>
-$ git rm <resolved-file>
+```bash
+git add <resolved-file>
+git rm <resolved-file>
+```
 
 Commitleri birleştirmek:
-$ git rebase -i <commit-just-before-first>
+```bash
+git rebase -i <commit-just-before-first>
+```
 
 Bu metni,
 pick <commit_id>
@@ -387,30 +401,46 @@ ________________________________________
 ## Geri Alma
 
 Çalışılan dosyadaki tüm yerel değişiklikleri kaldırır:
-$ git reset --hard HEAD
+```bash
+git reset --hard HEAD
+```
 
 Evreleme alanı dışındaki tüm dosyaları alır(örnek: son git add'i geri alır):
-$ git reset HEAD
+```bash
+git reset HEAD
+```
 
 Belli bir dosyadaki yerel değişiklikleri kaldırır:
-$ git checkout HEAD <file>
+```bash
+git checkout HEAD <file>
+```
 
 Silinen dosyayı geri döndürme dosyanın commit loglarının tutuluyor olması ile mümkündür:
-$ git revert <commit>
+```bash
+git revert <commit>
+```
 
 Belirlediğiniz HEADden bir önceki commite döner ve belirlemiş olduğunuz committe yaptığınız tüm değişiklikleri geri alır:
-$ git reset --hard <commit>
+```bash
+git reset --hard <commit>
+```
 
 Belirlediğiniz HEADden bir önceki commite döner ve belirlemiş olduğunuz committe yaptığınız tüm değişiklikleri untracked dosyalar arasına alır:
-$ git reset <commit>
+```bash
+git reset <commit>
+```
 
 Belirlediğiniz HEADden bir önceki commite döner ve yaptığınız tüm değişiklilkleri local commitlerinizi tutarak geri alır:
-$ git reset --keep <commit>
+```bash
+git reset --keep <commit>
+```
 
 Gitignore'a eklenmeden önce yanlışlıkla kaydedilmiş dosyaları kaldırın:
-$ git rm -r --cached .
-$ git add .
-$ git commit -m "remove xyz file"
+```bash
+git rm -r --cached .
+git add .
+git commit -m "remove xyz file"
+```
 
 ________________________________________
 
