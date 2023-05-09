@@ -244,67 +244,107 @@ ________________________________________
 ## Branches & Tags
  
 Tüm var olan branchleri listeler:
-$ git branch
+```bash
+git branch
+```
 
 Ana branchi değiştirir:
-$ git checkout <branch>
+```bash
+git checkout <branch>
+```
 
 Mevcut ana branchte yeni bir branch oluşturur:
-$ git branch <new-branch>
+```bash
+git branch <new-branch>
+```
 
 Remote branchte yeni bir izlenen branch oluşturur:
-$ git branch --track <new-branch> <remote-branch>
+```bash
+git branch --track <new-branch> <remote-branch>
+```
 
 Yerel branchi siler:
-$ git branch -d <branch>
+```bash
+git branch -d <branch>
+```
 
 Güncel commiti etiket ile işaretler:
-$ git tag <tag-name>
+```bash
+git tag <tag-name>
+```
 
 HEADi etiket ile işaretler ve bir mesaj eklemek için yazı editörünü açar:
-$ git tag -a <tag-name>
+```bash
+git tag -a <tag-name>
+```
 
 HEADi bir mesaj içermek şartı ile etiketler:
-$ git tag <tag-name> -am 'message here'
+```bash
+git tag <tag-name> -am 'message here'
+```
 
 Tüm etiketleri listeler:
-$ git tag
+```bash
+git tag
+```
 
 Tüm etiketleri mesajları ile listeler (etiket mesajı yoksa bir etiket mesajı yaz):
-$ git tag -n
+```bash
+git tag -n
+```
 
 ________________________________________
 
 ## Güncelleştirme & Yayınlama
 
 Yapılandırılmış tüm güncel remoteları listeler:
-$ git remote -v
+```bash
+git remote -v
+```
 
-Belirli bir <remote> hakkında bilgileri gösterir.:
-$ git remote show <remote>
+Belirli bir <remote> hakkında bilgileri gösterir:
+```bash
+git remote show <remote>
+ ```
 
 Yeni remote repository oluşturur, <remote> diye isimlendirir:
-$ git remote add <remote> <url>
+```bash
+git remote add <remote> <url>
+ ```
 
 <Remote> da bulunan tüm değişiklikleri indirir, ama ana brachle birleştirmez:
-$ git fetch <remote>
+```bash
+git fetch <remote>
+ ```
 
 Değişiklikleri indirir ve doğrudan ana brache merge/integrate eder:
-$ git remote pull <remote> <url>
+```bash
+git remote pull <remote> <url>
+ ```
 
 Tüm ana Branchteki değişiklikleri yerel repositorye ekler:
-$ git pull origin master
+```bash
+git pull origin master
+ ```
 
 Remote da bulunan repositorye(depoya), yerel değişiklikleri yayınlar:
-$ git push remote <remote> <branch>
+```bash
+git push remote <remote> <branch>
+ ```
 
 Remote da bulunan bir branchi siler:
-$ git push <remote> :<branch> (since Git v1.5.0)
+```bash
+git push <remote> :<branch> (since Git v1.5.0)
+ ```
 ya da
-$ git push <remote> --delete <branch> (since Git v1.7.0)
+```bash
+git push <remote> --delete <branch> (since Git v1.7.0)
+ ```
 
 Etiketleri yayınlar:
-$ git push --tags
+```bash
+git push --tags
+ ```
 ________________________________________
 
 ## Merge & Rebase
