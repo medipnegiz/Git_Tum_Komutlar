@@ -4,7 +4,7 @@ ________________________________________
 ## Index
 
 *	[Kurulum](#kurulum)
-*	Yapılandırma
+*	[Yapılandırma](#yapilandirma)
 *	Oluşturma
 *	Yerel Değişiklikler
 *	Arama
