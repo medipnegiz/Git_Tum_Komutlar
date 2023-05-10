@@ -3,7 +3,7 @@ ________________________________________
  
 ## Index
 
-*	Kurulum
+*	[Kurulum](#kurulum)
 *	Yapılandırma
 *	Oluşturma
 *	Yerel Değişiklikler
