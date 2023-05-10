@@ -10,9 +10,9 @@ ________________________________________
 *	[Arama](#arama)
 *	[Commit Gecmisi](#commit-gecmisi)
 *	[Tasi yada Yeniden Adlandir](#tasi-yada-yeniden-adlandir) 
-*	[Branches ve Tags(Etiketler)](#branches-ve-tags(etiketler))
+*	[Branches ve Tags](#branches-ve-tags)
 *	[Güncellestirme ve Yayinlama](#güncellestirme-ve-yayinlama)
-*	[Merge(Birlestirme) ve Rebase](#merge(birlestirme)-ve-rebase)
+*	[Merge ve Rebase](#merge-ve-rebase)
 *	[Geri Alma](#geri-alma)
 *	[Git Flow](#git-flow)
 ________________________________________
@@ -101,58 +101,58 @@ git init <directory>
 
 ## Yerel Degisiklikler
 
-##### Çalışılan dizindeki dosyaların değişimi:
+Çalışılan dizindeki dosyaların değişimi:
 ```bash
 git status
 ```
 
-##### İzlenen dosyalardaki değişiklikler:
+İzlenen dosyalardaki değişiklikler:
 ```bash
 git diff
 ```
 
-##### Tüm güncel değişiklikleri sonraki commite ekleme:
+Tüm güncel değişiklikleri sonraki commite ekleme:
 ```bash
 git add .
 ```
 
-##### Sonraki commite &lt;dosyasındaki&gt; bazı değişikleri ekleme:
+Sonraki commite &lt;dosyasındaki&gt; bazı değişikleri ekleme:
 ```bash
 git add -p
 ```
 
-##### Tüm izlenen dosyalardaki yerel değişiklikleri Commitleme:
+Tüm izlenen dosyalardaki yerel değişiklikleri Commitleme:
 ```bash
 git commit -a
 ```
 
-##### Önceden hazırlanan değişiklikleri commitleme:
+Önceden hazırlanan değişiklikleri commitleme:
 ```bash
 git commit
 ```
 
-##### Mesaj ile commitleme:
+Mesaj ile commitleme:
 ```bash
 git commit -m 'message here'
 ```
 
-##### Önceki belli bir tarihe commitleme:
+Önceki belli bir tarihe commitleme:
 ```bash
 git commit --date="date --date='n day ago'" -am "Commit Message"
 ```
 
-##### Son commiti değiştirme:<br>
-###### Yayınlanan commite değişiklik yapmayın!
+Son commiti değiştirme:<br>
+Yayınlanan commite değişiklik yapmayın!
 ```bash
 git commit --amend
 ```
 
-##### Mevcut branchteki kaydedilmemiş commitleri diğer bazı branchlere taşıma:
+Mevcut branchteki kaydedilmemiş commitleri diğer bazı branchlere taşıma:
 ```bash
 git stash git checkout branch2 git stash pop
 ```
 
-##### Saklanan değişiklikleri mevcut branche geri yükleme:
+Saklanan değişiklikleri mevcut branche geri yükleme:
 ```bash
 git stash apply
 ```
@@ -242,7 +242,7 @@ git mv Index.txt Index.html
 
 ________________________________________
 
-## Branches ve Tags(Etiketler)
+## Branches ve Tags
  
 Tüm var olan branchleri listeler:
 ```bash
@@ -348,7 +348,7 @@ git push --tags
  ```
 ________________________________________
 
-## Merge(Birlestirme) ve Rebase
+## Merge ve Rebase
 
 Seçili HEADinizi istediğiniz <branch>'e merge eder:
 ```bash
