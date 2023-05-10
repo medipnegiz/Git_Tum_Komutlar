@@ -59,6 +59,8 @@ Commitler için global yazı editörünü ayarlamak:
 git config --global core.editor vi
 ```
 
+## Go to [Index](#index)
+
 ________________________________________
 
 ## Yapilandirma
@@ -78,6 +80,8 @@ Sistem genelinde yapılandırma dosyası [--system]:
 /etc/gitconfig
 ```
 
+## Go to [Index](#index)
+
 ________________________________________
 
 ## Olusturma
@@ -96,6 +100,8 @@ Belirli dizinde yerel repository(depo) oluşturma:
 ```bash
 git init <directory>
 ```
+
+## Go to [Index](#index)
 
 <hr>
 
@@ -167,6 +173,9 @@ Saklanan değişiklikleri kaldırma:
 ```bash
 git stash drop
 ```
+
+## Go to [Index](#index)
+
 ________________________________________
 
 ## Arama
@@ -190,6 +199,8 @@ Belirli bir kelimeyi içeren commitleri göstermek (düzenli ifadeler kullanarak
 ```bash
 git log -S "keyword" --pickaxe-regex
 ```
+
+## Go to [Index](#index)
 
 ________________________________________
 
@@ -230,6 +241,8 @@ Referans kayıtlarını siler:
 git reflog delete
 ```
 
+## Go to [Index](#index)
+
 ________________________________________
 
 ## Tasi yada Yeniden Adlandir
@@ -239,6 +252,8 @@ Index.txt'den Index.html'e
 ```bash
 git mv Index.txt Index.html
 ```
+
+## Go to [Index](#index)
 
 ________________________________________
 
@@ -294,6 +309,8 @@ Tüm etiketleri mesajları ile listeler (etiket mesajı yoksa bir etiket mesajı
 git tag -n
 ```
 
+## Go to [Index](#index)
+
 ________________________________________
 
 ## Güncellestirme ve Yayinlama
@@ -346,6 +363,9 @@ Etiketleri yayınlar:
 ```bash
 git push --tags
  ```
+ 
+## Go to [Index](#index)
+ 
 ________________________________________
 
 ## Merge ve Rebase
@@ -397,6 +417,8 @@ pick <commit_id>
 squash <commit_id2>
 squash <commit_id3>
 
+## Go to [Index](#index)
+ 
 ________________________________________
 
 ## Geri Alma
@@ -443,6 +465,7 @@ git add .
 git commit -m "remove xyz file"
 ```
 
+## Go to [Index](#index)
 ________________________________________
 
 # Git-Flow
