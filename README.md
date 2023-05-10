@@ -9,10 +9,10 @@ ________________________________________
 *	[Yerel Degisiklikler](#yerel-degisiklikler)
 *	[Arama](#arama)
 *	[Commit Gecmisi](#commit-gecmisi)
-*	[Tasi / Yeniden Adlandir)](#tasi-/-yeniden-adlandir) 
-*	[Branches & Tags(Etiketler)](#branches-&-tags(etiketler))
-*	[Güncellestirme & Yayinlama](#güncellestirme-&-yayinlama)
-*	[Merge(Birlestirme) & Rebase](#merge(birlestirme)-&-rebase)
+*	[Tasi yada Yeniden Adlandir](#tasi-yada-yeniden-adlandir) 
+*	[Branches ve Tags(Etiketler)](#branches-ve-tags(etiketler))
+*	[Güncellestirme ve Yayinlama](#güncellestirme-ve-yayinlama)
+*	[Merge(Birlestirme) ve Rebase](#merge(birlestirme)-ve-rebase)
 *	[Geri Alma](#geri-alma)
 *	[Git Flow](#git-flow)
 ________________________________________
@@ -232,7 +232,7 @@ git reflog delete
 
 ________________________________________
 
-## Tasi / Yeniden Adlandir
+## Tasi yada Yeniden Adlandir
 
 Dosyayı yeniden adlandırmak:
 Index.txt'den Index.html'e
@@ -242,7 +242,7 @@ git mv Index.txt Index.html
 
 ________________________________________
 
-## Branches & Tags(Etiketler)
+## Branches ve Tags(Etiketler)
  
 Tüm var olan branchleri listeler:
 ```bash
@@ -296,7 +296,7 @@ git tag -n
 
 ________________________________________
 
-## Güncellestirme & Yayınlama
+## Güncellestirme ve Yayinlama
 
 Yapılandırılmış tüm güncel remoteları listeler:
 ```bash
@@ -348,7 +348,7 @@ git push --tags
  ```
 ________________________________________
 
-## Merge & Rebase
+## Merge(Birlestirme) ve Rebase
 
 Seçili HEADinizi istediğiniz <branch>'e merge eder:
 ```bash
