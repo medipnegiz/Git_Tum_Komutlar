@@ -4,16 +4,17 @@ ________________________________________
 ## Index
 
 *	[Kurulum](#kurulum)
-*	[Yapılandırma](#yapilandirma)
-*	Oluşturma
-*	Yerel Değişiklikler
-*	Arama
-*	Commit Geçmişi
-*	Branches & Tags(Etiketler)
-*	Güncelleştirme & Yayınlama
-*	Merge(Birleştirme) & Rebase
-*	Geri Alma
-*	Git Flow
+*	[Yapilandirma](#yapilandirma)
+*	[Olusturma](#olusturma)
+*	[Yerel Degisiklikler](#yerel-degisiklikler)
+*	[Arama](#arama)
+*	[Commit Gecmisi](#commit-gecmisi)
+*	[Tasi / Yeniden Adlandir)](#tasi-/-yeniden-adlandir) 
+*	[Branches & Tags(Etiketler)](#branches-&-tags(etiketler))
+*	[Güncellestirme & Yayinlama](#güncellestirme-&-yayinlama)
+*	[Merge(Birlestirme) & Rebase](#merge(birlestirme)-&-rebase)
+*	[Geri Alma](#geri-alma)
+*	[Git Flow](#git-flow)
 ________________________________________
 
 ## Kurulum
@@ -60,7 +61,7 @@ git config --global core.editor vi
 
 ________________________________________
 
-## Yapılandırma
+## Yapilandirma
 
 Repositorye(depoya) özgü yapılandırma dosyası [--local]:
 ```bash
@@ -79,7 +80,7 @@ Sistem genelinde yapılandırma dosyası [--system]:
 
 ________________________________________
 
-## Oluşturma
+## Olusturma
 
 Var olan bir repositoryi(depoyu) klonlama:
 ```bash
@@ -98,7 +99,7 @@ git init <directory>
 
 <hr>
 
-## Yerel Değişiklikler
+## Yerel Degisiklikler
 
 ##### Çalışılan dizindeki dosyaların değişimi:
 ```bash
@@ -192,7 +193,7 @@ git log -S "keyword" --pickaxe-regex
 
 ________________________________________
 
-## Commit Geçmişi
+## Commit Gecmisi
 
 Tüm commitleri en yenisinden başlayarak listeler:
 ```bash
@@ -231,7 +232,7 @@ git reflog delete
 
 ________________________________________
 
-## Taşı / Yeniden Adlandır
+## Tasi / Yeniden Adlandir
 
 Dosyayı yeniden adlandırmak:
 Index.txt'den Index.html'e
@@ -241,7 +242,7 @@ git mv Index.txt Index.html
 
 ________________________________________
 
-## Branches & Tags
+## Branches & Tags(Etiketler)
  
 Tüm var olan branchleri listeler:
 ```bash
@@ -295,7 +296,7 @@ git tag -n
 
 ________________________________________
 
-## Güncelleştirme & Yayınlama
+## Güncellestirme & Yayınlama
 
 Yapılandırılmış tüm güncel remoteları listeler:
 ```bash
