@@ -483,19 +483,27 @@ ________________________________________
 
 ## Ayarlar
 
-Git flow'u kullanabilmek için öncelikli olarak git kurulumunun yapılması gerekmektedir. Git flow OSX, Linux ve Windows üzerinde çalıştırılabilir.
+Git flow'u kullanabilmek için öncelikli olarak git kurulumunun yapılması gerekmektedir. Git flow OSX, Linux ve Windows üzerinde çalıştırılabilir
 OSX Homebrew:
-$ brew install git-flow
+ ```bash
+brew install git-flow
+ ```
 
 OSX Macports:
-$ port install git-flow
+ ```bash
+port install git-flow
+ ```
 
 Linux:
-$ apt-get install git-flow
+ ```bash
+apt-get install git-flow
+ ```
 
 Windows (Cygwin):
-Git flow kurulumu için wget ve util-linux gerekmektedir.
-$ wget -q -O - --no-check-certificate https://github.com/nvie/gitflow/raw/develop/contrib/gitflow-installer.sh | bash
+Git flow kurulumu için wget ve util-linux gerekmektedir
+ ```bash
+wget -q -O - --no-check-certificate https://github.com/nvie/gitflow/raw/develop/contrib/gitflow-installer.sh | bash
+ ```
 
 ________________________________________
 
