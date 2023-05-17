@@ -408,14 +408,18 @@ git rebase -i <commit-just-before-first>
 ```
 
 Bu metni,
+ ```bash
 pick <commit_id>
 pick <commit_id2>
 pick <commit_id3>
+ ```
 
 bu metin ile değiştirin,
+ ```bash
 pick <commit_id>
 squash <commit_id2>
 squash <commit_id3>
+ ```
 
 ## Go to [Index](#index)
  
@@ -472,12 +476,11 @@ ________________________________________
 
  ## Index
  
-*	Ayarlar
-*	Başlarken
-*	Özellikler (Features)
-*	Bir Yayın Çıkarırken (Release)
-*	Hata Giderimleri (Hotfixes)
-*	Komutlar (Commands)
+*	[Ayarlar](#ayarlar)
+*	[Baslarken](#baslarken)
+*	[Özellikler (Features)](#özellikler-(features))
+*	[Bir Yayin Cikarirken (Release)](#bir-yayin-cikarirken-(release))
+*	[Hata Giderimleri (Hotfixes)](#hata-giderimleri-(hotfixes))
 
 ________________________________________
 
@@ -507,7 +510,7 @@ wget -q -O - --no-check-certificate https://github.com/nvie/gitflow/raw/develop/
 
 ________________________________________
 
-## Başlarken
+## Baslarken
 
 Git flow, kullanmak istediğiniz projede ayarlarınızı özelleştirmek amacıyla başlatılır (initialize).
 Başlangıç (Initialize):
@@ -541,7 +544,7 @@ Yayınlanmış bir özelliği almak (Getting a published feature):
 Uzak sunucu üzerinde yayınlanmış bir özelliği kendi yerel (local) çalışma ortamınıza aktarırken:
 git flow feature pull origin MYFEATURE
 ________________________________________
-Bir Yayın Çıkarırken (Release)
+Bir Yayin Cikarirken (Release)
 Yeni bir ürünün yayınlanmasına yardımcı olur. Küçük hata giderimleri ve meta-data hazırlığı için kullanılabilir.
 Bir sürüm yayınlamak (Start a release):
 Bu komut ile develop dalını temel kabul eden bir release dalı (branch) yaratılır.
