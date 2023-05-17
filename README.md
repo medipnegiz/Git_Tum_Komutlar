@@ -478,9 +478,9 @@ ________________________________________
  
 *	[Ayarlar](#ayarlar)
 *	[Baslarken](#baslarken)
-*	[Özellikler (Features)](#özellikler-(features))
-*	[Bir Yayin Cikarirken (Release)](#bir-yayin-cikarirken-(-release-))
-*	[Hata Giderimleri (Hotfixes)](#hata-giderimleri-(hotfixes))
+*	[Özellikler (Features)](#özellikler)
+*	[Bir Yayin Cikarirken (Release)](#bir-yayin-cikarirken)
+*	[Hata Giderimleri (Hotfixes)](#hata-giderimleri)
 
 ________________________________________
 
@@ -517,11 +517,13 @@ Başlangıç (Initialize):
 
 Bu noktada kafanızda dallarınızı (branches) isimlendirme konusuna ilişkin birçok soru işareti oluşacaktır. Bu bağlamda varsayılan (default) değerleri kullanmanız önerilir.
 git flow'u kullanmak istediğiniz reponuzdayken:
+  ```bash
 git flow init
-ya da
-
-varsayılan:
+  ```
+ya da varsayılan:
+  ```bash
 git flow init -d
+  ```
 ________________________________________
 
 ## Özellikler (Features)
