@@ -479,7 +479,7 @@ ________________________________________
 *	[Ayarlar](#ayarlar)
 *	[Baslarken](#baslarken)
 *	[Özellikler (Features)](#özellikler-(features))
-*	[Bir Yayin Cikarirken (Release)](#bir-yayin-cikarirken-(release))
+*	[Bir Yayin Cikarirken (Release)](#bir-yayin-cikarirken-(-release-))
 *	[Hata Giderimleri (Hotfixes)](#hata-giderimleri-(hotfixes))
 
 ________________________________________
@@ -544,7 +544,9 @@ Yayınlanmış bir özelliği almak (Getting a published feature):
 Uzak sunucu üzerinde yayınlanmış bir özelliği kendi yerel (local) çalışma ortamınıza aktarırken:
 git flow feature pull origin MYFEATURE
 ________________________________________
-Bir Yayin Cikarirken (Release)
+
+## Bir Yayin Cikarirken (Release)
+
 Yeni bir ürünün yayınlanmasına yardımcı olur. Küçük hata giderimleri ve meta-data hazırlığı için kullanılabilir.
 Bir sürüm yayınlamak (Start a release):
 Bu komut ile develop dalını temel kabul eden bir release dalı (branch) yaratılır.
@@ -562,7 +564,9 @@ Bir sürüm yayınını tamamlarken git dallanmasının (branching) en büyük a
 git flow release finish RELEASE
 Ancak etiketlerinizi de eklemeyi unutmayın! git push --tags bu sorununuzu da halledecektir.
 ________________________________________
-Hata giderimleri (Hotfixes)
+
+## Hata giderimleri (Hotfixes)
+
 Yayına çıkarılmış bir versiyonda istenmeyen durumlar ortaya çıktığında ani hata giderimi için kullanılır. Hotfixler, master ana dalı (branch)ındaki versiyon numarasını belirten etiketten dallanır (branching).
 Bir hata giderimini başlatmak(git flow hotfix start):
 Diğer git flow komutlarında olduğu gibi bir hotfix başlatılırken:
