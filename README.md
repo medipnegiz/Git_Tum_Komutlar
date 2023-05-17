@@ -478,9 +478,9 @@ ________________________________________
  
 *	[Ayarlar](#ayarlar)
 *	[Baslarken](#baslarken)
-*	[Özellikler (Features)](#özellikler)
-*	[Bir Yayin Cikarirken (Release)](#bir-yayin-cikarirken)
-*	[Hata Giderimleri (Hotfixes)](#hata-giderimleri)
+*	[Özellikler (Features)](#özellikler-features)
+*	[Bir Yayin Cikarirken (Release)](#bir-yayin-cikarirken-release)
+*	[Hata Giderimleri (Hotfixes)](#hata-giderimleri-hotfixes)
 
 ________________________________________
 
