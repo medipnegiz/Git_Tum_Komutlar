@@ -512,11 +512,9 @@ ________________________________________
 
 ## Baslarken
 
-Git flow, kullanmak istediğiniz projede ayarlarınızı özelleştirmek amacıyla başlatılır (initialize).
-Başlangıç (Initialize):
-
-Bu noktada kafanızda dallarınızı (branches) isimlendirme konusuna ilişkin birçok soru işareti oluşacaktır. Bu bağlamda varsayılan (default) değerleri kullanmanız önerilir.
-git flow'u kullanmak istediğiniz reponuzdayken:
+#### Git flow, kullanmak istediğiniz projede ayarlarınızı özelleştirmek amacıyla başlatılır (initialize).
+#### Bu noktada kafanızda dallarınızı (branches) isimlendirme konusuna ilişkin birçok soru işareti oluşacaktır. Bu bağlamda varsayılan (default) değerleri kullanmanız önerilir.
+#### Git flow'u kullanmak istediğiniz reponuzdayken:
   ```bash
 git flow init
   ```
@@ -528,23 +526,27 @@ ________________________________________
 
 ## Özellikler (Features)
 
-Git flow ile yayınlamak üzere olduğunuz projenize ekleyeceğiniz özellikler için yeni dallarda (feature) kodlama yaparsınız. Genel olarak sadece geliştirici repolarında bulunurlar.
-Yeni bir özellik eklemesi başlatmak (feature start):
-Yeni özelliklerin eklenmesi öncelikle develop dalından (branch) başlar.
+#### Git flow ile yayınlamak üzere olduğunuz projenize ekleyeceğiniz özellikler için yeni dallarda (feature) kodlama yaparsınız. Genel olarak sadece geliştirici repolarında bulunurlar.
+#### Yeni bir özellik eklemesi başlatmak (feature start) öncelikle develop dalından (branch) başlar.
+#### Bu komut bize develop dalını (branch) temel alan bir özellik dalı (feature) oluşturur. Ve bulunduğumuz dalı develop/MYFEATURE olarak değiştirir.
+```bash
 git flow feature start MYFEATURE
-Bu komut bize develop dalını (branch) temel alan bir özellik dalı (feature) oluşturur. Ve bulunduğumuz dalı develop/MYFEATURE olarak değiştirir.
-Bir özellik eklemesi bitirilirken (feature finish):
-Bir özelliğin eklenme işlemi bitirilirken şunları yapılır:
-1)Kendi çalıştığımız özellik dalı (burada MYFEATURE) develop ana dalı ile birleştirilir.
-2)Bu birleşmeden sonra kendi özellik dalımız (MYFEATURE) silinir.
-3)Bulunduğumuz dal tekrar develop olarak değiştirilir.
+```
+#### Bir özellik eklemesi bitirilirken (feature finish) şunlar yapılır:
+#### 1)Kendi çalıştığımız özellik dalı (burada MYFEATURE) develop ana dalı ile birleştirilir.
+#### 2)Bu birleşmeden sonra kendi özellik dalımız (MYFEATURE) silinir.
+#### 3)Bulunduğumuz dal tekrar develop olarak değiştirilir.
+```bash
 git flow feature finish MYFEATURE
-Bir özelliği yayınlamak (Publish a feature):
-Bir ekip içerisinde geliştirme mi yapıyorsunuz? O zaman geliştirdiğiniz özelliği bir uzak sunucuya gönderin, böylelikle geliştirdiğiniz özellik diğer kullanıcılar tarafından kullanılabilir.
+```
+#### Bir özelliği yayınlamak (Publish a feature). Bir ekip içerisinde geliştirme mi yapıyorsunuz? O zaman geliştirdiğiniz özelliği bir uzak sunucuya gönderin, böylelikle geliştirdiğiniz özellik diğer kullanıcılar tarafından kullanılabilir.
+```bash
 git flow feature publish MYFEATURE
-Yayınlanmış bir özelliği almak (Getting a published feature):
-Uzak sunucu üzerinde yayınlanmış bir özelliği kendi yerel (local) çalışma ortamınıza aktarırken:
+```
+#### Uzak sunucu üzerinde yayınlanmış bir özelliği kendi yerel (local) çalışma ortamınıza aktarırken:
+```bash
 git flow feature pull origin MYFEATURE
+```
 ________________________________________
 
 ## Bir Yayin Cikarirken (Release)
