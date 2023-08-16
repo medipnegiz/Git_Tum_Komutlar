@@ -551,32 +551,42 @@ ________________________________________
 
 ## Bir Yayin Cikarirken (Release)
 
-Yeni bir ürünün yayınlanmasına yardımcı olur. Küçük hata giderimleri ve meta-data hazırlığı için kullanılabilir.
-Bir sürüm yayınlamak (Start a release):
-Bu komut ile develop dalını temel kabul eden bir release dalı (branch) yaratılır.
-Opsiyonel olarak yayınınızın [BASE] noktasından başlamasını sağlayabilirsiniz. Bu commit develop dalında (branch) iken yapılmalıdır.
+#### Yeni bir ürünün yayınlanmasına yardımcı olur. Küçük hata giderimleri ve meta-data hazırlığı için kullanılabilir.
+#### Bir sürüm yayınlamak (Start a release):
+#### Bu komut ile develop dalını temel kabul eden bir release dalı (branch) yaratılır.
+#### Opsiyonel olarak yayınınızın [BASE] noktasından başlamasını sağlayabilirsiniz. Bu commit develop dalında (branch) iken yapılmalıdır.
+```bash
 git flow release start RELEASE [BASE]
-Yayınlama dalınız (release branch) oluştuktan sonra bu yöntem ile diğer yazılımcılar tarafından yapılan release commitlerinin de kabul edilmesini sağlayabilirsiniz. Bunu özellik yayınlama (feature publishing) ile kolaylıkla yapabilirsiniz.
+```
+#### Yayınlama dalınız (release branch) oluştuktan sonra bu yöntem ile diğer yazılımcılar tarafından yapılan release commitlerinin de kabul edilmesini sağlayabilirsiniz. Bunu özellik yayınlama (feature publishing) ile kolaylıkla yapabilirsiniz.
+```bash
 git flow release publish RELEASE
-(Uzak sunucu üzerindeki yayınları git flow release track RELEASE ile izleyebilirsiniz. )
-Bir sürüm yayınını tamamlamak(Finish up a release):
-Bir sürüm yayınını tamamlarken git dallanmasının (branching) en büyük adımını atarız. Yayınlanma tamamlanırken:
-1)Yayınlama yaptığımız dal olan release dalı (branch) master ana dalı ile birleştirilir.
-2)Etiketler (tags) isimleri ile birlikte yayınlanır.
-3)Arkaplandaki birleştirmeler (back-merges) develop dalında yayınlanır.
-4)Yayınlama için açmış olduğumuz dal (branch) silinir.
+```
+#### (Uzak sunucu üzerindeki yayınları git flow release track RELEASE ile izleyebilirsiniz. )
+#### Bir sürüm yayınını tamamlamak(Finish up a release):
+#### Bir sürüm yayınını tamamlarken git dallanmasının (branching) en büyük adımını atarız. Yayınlanma tamamlanırken:
+#### 1)Yayınlama yaptığımız dal olan release dalı (branch) master ana dalı ile birleştirilir.
+#### 2)Etiketler (tags) isimleri ile birlikte yayınlanır.
+#### 3)Arkaplandaki birleştirmeler (back-merges) develop dalında yayınlanır.
+#### 4)Yayınlama için açmış olduğumuz dal (branch) silinir.
+```bash
 git flow release finish RELEASE
-Ancak etiketlerinizi de eklemeyi unutmayın! git push --tags bu sorununuzu da halledecektir.
+```
+#### Ancak etiketlerinizi de eklemeyi unutmayın! git push --tags bu sorununuzu da halledecektir.
 ________________________________________
 
 ## Hata giderimleri (Hotfixes)
 
-Yayına çıkarılmış bir versiyonda istenmeyen durumlar ortaya çıktığında ani hata giderimi için kullanılır. Hotfixler, master ana dalı (branch)ındaki versiyon numarasını belirten etiketten dallanır (branching).
-Bir hata giderimini başlatmak(git flow hotfix start):
-Diğer git flow komutlarında olduğu gibi bir hotfix başlatılırken:
+#### Yayına çıkarılmış bir versiyonda istenmeyen durumlar ortaya çıktığında ani hata giderimi için kullanılır. Hotfixler, master ana dalı (branch)ındaki versiyon numarasını belirten etiketten dallanır (branching).
+#### Bir hata giderimini başlatmak(git flow hotfix start):
+#### Diğer git flow komutlarında olduğu gibi bir hotfix başlatılırken:
+```bash
 $ git flow hotfix start VERSION [BASENAME]
-Versiyon argümanları yeni hotfix yayınının adını alır. Opsiyonel olarak başlangıç noktası için bir isim özelleştirmesi yapabilirsiniz (basename).
-Hata giderimi bitirme (Finish a hotfix):
-Bir hata giderimi tamamlanırken, develop ve master dalları ile birleştirilir. Ayrıca master dalına (branch) hotfix versiyonunun etiketi eklenir.
+```
+#### Versiyon argümanları yeni hotfix yayınının adını alır. Opsiyonel olarak başlangıç noktası için bir isim özelleştirmesi yapabilirsiniz (basename).
+####Hata giderimi bitirme (Finish a hotfix):
+####Bir hata giderimi tamamlanırken, develop ve master dalları ile birleştirilir. Ayrıca master dalına (branch) hotfix versiyonunun etiketi eklenir.
+```bash
 git flow hotfix finish VERSION
-
+```
+## Go to [Index](#index)
